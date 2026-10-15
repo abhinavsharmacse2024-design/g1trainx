@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: #202124;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 320px; /* Thoda fixed width diya hai taaki card perfect dikhe */
+            height: 450px;
+            background-color: white;
+            border-radius: 12px; /* Screenshot match karne ke liye rounded corners */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Corners se image bahar na nikle */
+        }
+
+        /* TOP DIV: Image */
+        .box1 {
+            height: 50%;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .box1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: 0.5s;
+        }
+
+        .box1 img:hover {
+            scale: 1.1; /* 1.4 thoda zyada bada ho raha tha, 1.1 smooth lagega */
+        }
+
+        /* BOTTOM DIV: Text + Button */
+        .box2 {
+            height: 50%;
+            display: flex;
+            flex-direction: column; /* Elements ko ek ke neeche ek rakhne ke liye */
+            padding: 20px;
+        }
+
+        .box2 h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .box2 .rating {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .box2 .desc {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Button styling inside box2 */
+        .btn {
+            width: 100%;
+            background-color: #ffc107; /* Screenshot jaisa perfect yellow */
+            color: black;
+            padding: 10px;
+            border: none; /* Default border hatane ke liye */
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: auto; /* MAGIC TRICK: Ye button ko automatically sabse neeche push kar dega */
+        }
+        
+        .btn:hover {
+            background-color: black
+            ; /* Hover par thoda dark yellow */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            
+            <!-- 1st Div: Image -->
+            <div class="box1">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGVhZHBob25lc3xlbnwwfHwwfHx8MA%3D%3D" alt="headphones">
+            </div>
+
+            <!-- 2nd Div: Content and Button -->
+            <div class="box2">
+                <h3>Wireless Headphones</h3>
+                <p class="rating">⭐ 4.2 | 1.2K reviews</p>
+                <p class="desc">Premium wireless headphones with clear sound, long battery life and comfortable design.</p>
+                
+                <button class="btn">🛒 Add to Cart</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

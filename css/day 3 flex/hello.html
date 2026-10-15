@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCS Cards</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            width: 100%;
+            min-height: 100vh;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 20px; 
+            padding: 40px;
+        }
+
+        .card {
+            width: 320px;
+            display: flex;
+            flex-direction: column; 
+            background-color: white;
+            border: 1px solid #eee; 
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain; 
+        }
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1; 
+        }
+
+        .card h3 {
+            font-size: 22px;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        
+        <div class="card">
+            <img src="https://www.tcs.com/content/dam/global-tcs/en/images/who-we-are/Worldwide/india/indias-sovereign-cloud-infrastructure-web.jpg" alt="image 1">
+            <div class="card-content">
+                <h3>TCS and IEM Kolkata partner</h3>
+                <p>The collaboration will bring together TCS’ industry expertise and IEM’s academic ecosystem to strengthen applied learning, research, innovation and future-ready talent development.</p>
+        
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.tcs.com/content/dam/global-tcs/en/in-line/what-we-do/industries/banking/commercial-banking-inline.jpg" alt="image 2">
+            <div class="card-content">
+                <h3>From chips to intelligence</h3>
+                <p>In this TCS-sponsored discussion presented by Avasant, leaders from TCS, AMD, and HPE explore the choices shaping the future of enterprise AI.</p>
+               
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://www.tcs.com/content/dam/global-tcs/en/images/who-we-are/news/press-releases/jtr-partnership-renewal-pr-image-banner-new.jpg" alt="image 3">
+            <div class="card-content">
+                <h3>TCS renews Jaguar TCS partnership</h3>
+                <p>The expanded collaboration blends cutting-edge digital innovation with world-class engineering, strengthening trust and driving performance on and off track.</p>
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
