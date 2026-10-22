@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+
+}
+.overlay-width {
+    max-width: 1200px; /* Ya apne hisaab se width set karein */
+    margin: 0 auto; /* Isse container screen ke center me aa jayega */
+    padding: 0 20px; /* Chhoti screens par edge par touch na ho */
+
+}
+.space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
